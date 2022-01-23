@@ -25,7 +25,7 @@ function Component() {
 
 ### Two-way Binding
 
-- 
+-
 
 # useEffect Hook
 
@@ -57,3 +57,5 @@ function Component() {
 ## Notes
 
 - Callback always be called after component mounted
+- Cleanup function always be called before component unmount.
+- Cleanup function always be called before callback was called (except the first time when component mounted)
