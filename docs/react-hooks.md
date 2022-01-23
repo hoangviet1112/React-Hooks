@@ -59,3 +59,23 @@ function Component() {
 - Callback always be called after component mounted
 - Cleanup function always be called before component unmount.
 - Cleanup function always be called before callback was called (except the first time when component mounted)
+
+# useLayoutEffect Hook
+
+## Compare between useLayoutEffect and useEffect
+
+> useEffect
+
+- Cập nhật lại state.
+- Cập nhật DOM (mutated DOM node).
+- Render lại UI.
+- Gọi cleanup nếu deps thay đổi.
+- Gọi useEffect callback.
+
+> useLayoutEffect
+
+- Cập nhật lại state.
+- Cập nhật lại DOM (mutated DOM node).
+- Gọi cleanup nếu deps thay đổi (sync).
+- Gọi useLayoutEffect callback (sync).
+- Render lại UI.

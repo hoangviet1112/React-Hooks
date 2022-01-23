@@ -5,6 +5,7 @@ import UseEffectHookExample2 from './Hooks Demo/UseEffectHookExample2';
 import UseEffectHookExample3 from './Hooks Demo/UseEffectHookExample3';
 import UseEffectHookExample4 from './Hooks Demo/UseEffectHookExample4';
 import UseEffectHookExample5 from './Hooks Demo/UseEffectHookExample5';
+import UseLayoutEffectExample from './Hooks Demo/UseLayoutEffectExample';
 import UseStateHook from './Hooks Demo/UseStateHook';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <div style={{padding: "20px"}}>
       <button onClick={() => setShow(!show)}>Toggle</button>
       {
-        show && <UseEffectHookExample5 />
+        show && <UseLayoutEffectExample />
       }
     </div>
   )
