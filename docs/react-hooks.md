@@ -79,3 +79,7 @@ function Component() {
 - Gọi cleanup nếu deps thay đổi (sync).
 - Gọi useLayoutEffect callback (sync).
 - Render lại UI.
+
+> useRef
+
+- Lưu các giá trị qua một tham chiếu bên ngoài.
