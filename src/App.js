@@ -12,12 +12,19 @@ import UseRefHookExample2 from './Hooks Demo/UseRefHookExample2';
 import UseStateHook from './Hooks Demo/UseStateHook';
 // import Content from './ReactMemoDemo/Content';
 import UseCallbackDemo from './useCallbackDemo/useCallbackDemo'
+import UseContextDemo from './useContextDemo/UseContextDemo';
 
 function App() {
-  const [inputText, setInputText] = useState('')
+  // const data = [
+    
+  // ]
 
+  // const [inputText, setInputText] = useState('')
 
-  // const [show, setShow] = useState(false)
+  // const handleFormSubmit = () => {
+
+  // }
+  const [show, setShow] = useState(false)
 
   // const [count, setCount] = useState(0)
 
@@ -33,21 +40,21 @@ function App() {
   // }
   
   return (
-    // <div style={{padding: "20px"}}>
-    //   <button onClick={() => setShow(!show)}>Toggle</button>
-    //   {
-    //     show && <UseRefHookExample2 />
-    //   }
-    // </div>
-    <div style={{padding: "20px 40px"}}>
-      {/* <UseCallbackDemo onIncrease={handleIncrease} />
-      <h2>{count}</h2> */}
-      {/* <h2>{count2}</h2> */}
-      {/* <button onClick={handleIncrease2}>Increase 2</button>   */}
-      <form onSubmit={handleFormSubmit}>
-        <input onChange={e => setInputText(e.target.value)} placeholder='Enter Hook' />
-      </form>
+    <div style={{padding: "20px"}}>
+      <button onClick={() => setShow(!show)}>Toggle</button>
+      {
+        show && <UseContextDemo />
+      }
     </div>
+    // <div style={{padding: "20px 40px"}}>
+    //   {/* <UseCallbackDemo onIncrease={handleIncrease} />
+    //   <h2>{count}</h2> */}
+    //   {/* <h2>{count2}</h2> */}
+    //   {/* <button onClick={handleIncrease2}>Increase 2</button>   */}
+    //   <form onSubmit={handleFormSubmit}>
+    //     <input onChange={e => setInputText(e.target.value)} placeholder='Enter Hook' />
+    //   </form>
+    // </div>
   )
 }
 
